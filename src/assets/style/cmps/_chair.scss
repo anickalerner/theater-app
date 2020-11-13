@@ -1,0 +1,27 @@
+.row-position {
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+}
+.chair {
+  border-width: 0 3px 3px 3px;
+  background-color: lightgrey;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  &:hover{
+    background-color: honeydew;
+  }
+  &.marked{
+    background-color: darkgray;
+  }
+  &.booked{
+    background-color: darkred;
+    cursor: auto;
+  }
+}
+.empty {
+  color: black;
+  visibility: hidden;
+}
