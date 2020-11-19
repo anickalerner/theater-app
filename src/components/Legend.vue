@@ -1,8 +1,8 @@
 <template lang="html">
-  <section class="legend flex flex-start">
-    <div class="row-position chair"></div><label>Available seat</label>
-    <div class="row-position chair marked"></div><label>Selected seat</label>
-    <div class="row-position chair booked"></div><label>Reserved seat</label>
+  <section class="legend flex">
+    <div class="legend-item flex flex-start"><div class="row-position chair"></div><label>Available seat</label></div>
+    <div class="legend-item flex flex-start"><div class="row-position chair marked"></div><label>Selected seat</label></div>
+    <div class="legend-item flex flex-start"><div class="row-position chair booked"></div><label>Reserved seat</label></div>
   </section>
 </template>
 
@@ -12,7 +12,11 @@
     props: [],
     name: 'seat-legend',
     mounted () {
-
+      gsap.to(".legend-item", 
+      {x: function(index, target, targets) { //function-based value
+        return index * 50 + 200; 
+      }
+      , stagger: 0.25, duration: 1, delay: 1});
     },
     data () {
       return {

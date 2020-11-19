@@ -11,13 +11,13 @@
   border-radius: 0 0 5px 5px;
   cursor: pointer;
   &:hover{
-    background-color: honeydew;
+    background-color: $clr8;
   }
   &.marked{
     background-color: darkgray;
   }
   &.booked{
-    background-color: darkred;
+    background-color: $clr6;
     cursor: auto;
   }
 }

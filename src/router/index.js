@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import Theater from '../views/Theater.vue'
 
 Vue.use(VueRouter)
-
 const routes = [
   {
     path: '/',
